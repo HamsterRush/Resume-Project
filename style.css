@@ -125,6 +125,20 @@ article h2{
     margin-bottom: 20px;
     text-align: center;
 }
+article h3{
+    font-size: 30px;
+    color: #7bb431;
+    border-bottom: 2px solid #7bb431;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+article h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
 article h1{
     font-size: 30px;
     color: #7bb431;
@@ -133,8 +147,40 @@ article h1{
     width: 20%;
     
 }
+
 article p{
     line-height: 20px;
+}
+
+article ul {
+    list-style: inside;
+    list-style-type: disc;
+    font-size: 15px;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content{
+    background-color: rgb(233, 223, 235);
+    padding: 10px;
 }
 
 footer {
