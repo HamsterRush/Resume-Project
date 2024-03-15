@@ -26,19 +26,45 @@
 <!--Main-->
 
 <article>
-    <h1>About Me:</h1>
+    <h3>Contact Form</h3>
 
-    <p> Hi, I am Omar S. Bejarano. 
-        <br />
-         I am from ecuador, I am 14 Years old and my birthday is 19/12/2009.
-        I study in Taravella High 9th. 
-    </p>
-    <h2>two</h2>
-        <p>
-            <br/>
-            hi
-        </p>
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name..."
+            />
 
+            <label for="email">Email</label>
+            <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+            />
+
+            <label for="subject">Subject</label>
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="SUBJECT"
+            />
+
+            <label for="body">Body</label>
+            <textarea
+                id="body"
+                name="body"
+                placeholder="Your message here..."
+                style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
 </article>
 <footer>
     <h1>©Omar S. Bejarano</h1>
