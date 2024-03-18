@@ -92,10 +92,15 @@ header h2{
     text-align: right;
     padding: 40px 0 20px 0;
     font-size: 24.5px;
+    white-space: nowrap;
 }
-header a{
-    float: right;
-display: block;
+
+nav{
+    display: flex;
+    justify-content: right;
+}
+
+nav a{
 color:white;
 text-align: center;
 padding: 14px 16px;
@@ -103,11 +108,18 @@ background-color: rgb(64, 39, 90);
 text-decoration: none;
 }
 
-header a.active {
+nav a.active {
     background-color: black;
 }
 
-header,footer,article{
+nav a:hover{
+    background-color: #000000;
+    color: #fffbfb;
+}
+
+
+
+header,nav,footer,article{
     padding-left: 12.5%;
     padding-right: 12.5%;
 }
@@ -262,15 +274,24 @@ input[type='submit']:hover {
     padding: 20px;
 }
 
+@media  screen and (max-width: 1150px) {
+    header h2 {
+        clear: left;
+        text-align: unset;
+        padding-top: 10px;
+    }
+    
+}
+
 @media screen and (max-width: 900px) {
     .column {
         width: 50%;
     }
 
-    header a {
-        float: none;
-        display: flex;
+    nav {
+        justify-content: unset;
         flex-direction: column;
+        padding: 0%;
     }
 }
 
